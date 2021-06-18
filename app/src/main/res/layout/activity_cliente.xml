@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clienteActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="#51D16E4F"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#E53935"
+                android:gravity="center|center_horizontal"
+                android:onClick="volverCliente"
+                android:text="Volver"
+                android:textColor="#050B1E"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="228dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="GESTIÓN CLIENTES"
+                android:textColor="#071340"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="101dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/client" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtCedulaCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese cedula"
+            android:inputType="textPersonName"
+            android:textColorHint="#E41B1919" />
+
+        <EditText
+            android:id="@+id/txtApellidoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese los apellidos"
+            android:inputType="textPersonName"
+            android:textColorHint="#E41B1919" />
+
+        <EditText
+            android:id="@+id/txtNombreCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese los nombres"
+            android:inputType="textPersonName"
+            android:textColorHint="#E41B1919" />
+
+        <EditText
+            android:id="@+id/txtTelefonoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese numero tlfn"
+            android:inputType="phone"
+            android:textColorHint="#E41B1919" />
+
+        <EditText
+            android:id="@+id/txtDireccionCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese la Direccion"
+            android:inputType="textPersonName"
+            android:textColorHint="#E41B1919" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/teal_700"
+                android:drawableLeft="@android:drawable/ic_menu_save"
+                android:onClick="guardarCliente"
+                android:text="GUARDR" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:drawableLeft="@android:drawable/ic_notification_clear_all"
+                android:onClick="limpiarCampos"
+                android:text="CANCELAR" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lstClientes"
+            android:layout_width="match_parent"
+            android:layout_height="337dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
