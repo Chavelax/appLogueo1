@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE2E2"
+    android:paddingLeft="5dp"
+    tools:context=".EditarClienteActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="#F1DFDE"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="Editar Eliminar/Cliente"
+            android:textColor="#1E1D1D"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="9dp" />
+
+        <TextView
+            android:id="@+id/texIdClienteEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="0"
+            android:textColor="#121111"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtCedulaClienteEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese cedula"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:textColorHint="#E4151414" />
+
+        <EditText
+            android:id="@+id/txtApellidoClienteEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese los apellidos"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:textColorHint="#E4151414" />
+
+        <EditText
+            android:id="@+id/txtNombreClienteEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese los nombres"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:textColorHint="#E4151414" />
+
+        <EditText
+            android:id="@+id/txtTelefonoClienteEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese numero tlfn"
+            android:inputType="phone"
+            android:paddingLeft="5dp"
+            android:textColorHint="#E4151414" />
+
+        <EditText
+            android:id="@+id/txtDireccionClienteEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese la Direccion"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:textColorHint="#E4151414" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="169dp"
+                android:layout_height="61dp"
+                android:layout_weight="1"
+                android:onClick="actualizarClient"
+                android:text="Actualizar"
+                android:textSize="16sp"
+                app:backgroundTint="#37B598" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="174dp"
+                android:layout_height="63dp"
+                android:layout_weight="1"
+                android:onClick="eliminarCliente"
+                android:text="Eliminar"
+                android:textSize="16sp"
+                app:backgroundTint="#F44336" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:onClick="volver"
+            android:text="Volver"
+            android:textSize="16sp"
+            app:backgroundTint="#B67A8F" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
