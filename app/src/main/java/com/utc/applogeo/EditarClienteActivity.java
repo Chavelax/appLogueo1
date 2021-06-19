@@ -44,11 +44,11 @@ public class EditarClienteActivity extends AppCompatActivity {
                 cedula=parametrosExtra.getString("cedula");
                 apellido= parametrosExtra.getString("apellido");
                 nombre=parametrosExtra.getString("nombre");
-                telefono=parametrosExtra.getString(telefono);
+                telefono=parametrosExtra.getString("telefono");
                 direccion=parametrosExtra.getString("direccion");
 
             }catch (Exception ex){
-                Toast.makeText(getApplicationContext(), "Error en proceso de solicitud "+ex.toString(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Error en proceso de solicitud ",Toast.LENGTH_SHORT).show();
             }
         }
         texIdClienteEditar.setText(id);
